@@ -1,0 +1,220 @@
+:root{
+  --main-color: #547aec;
+  --main-bg: #f5f5f5;
+  --primary-text-color: #656662;
+  --highlight-bg: #d8d8d8;
+  --primary-color: #425b84;
+  --secondary-color: #5b7bb4;
+  --max-width: 1100px;
+}
+
+.App{
+  padding: 0 !important;
+  height: 100vh;
+}
+
+.logo{
+  border-radius: 50%;
+  background-color: var(--main-color);
+  color: var(--main-bg);
+  text-decoration: none;
+  font-size: large;
+}
+
+.landing-row{
+  height: 100vh;
+  background-color: var(--main-bg);
+  align-items: center;
+}
+
+.main-text{
+  color: var(--main-color);
+}
+
+.primary-text{
+  color: var(--primary-text-color);
+}
+
+.highlight-bg{
+  background-color: var(--highlight-bg);
+}
+
+.scroll-offset{
+  scroll-margin-top: 72px;
+}
+
+.button{
+  font-size: 1.25rem !important;
+  max-width: 200px;
+  background-color: var(--main-color) !important;
+}
+
+.normal-main-button{
+  max-width: 200px;
+  background-color: var(--main-color) !important;
+}
+
+.hide-button{
+  visibility: hidden;
+}
+
+.footer-col{
+  text-align: center;
+}
+
+.footer-logo{
+  text-decoration: none;
+  color: whitesmoke;
+  margin: 5px;
+}
+
+.footer-logo:hover{
+  color:var(--main-color);
+}
+
+.underlineText{
+  text-decoration: underline 3px;
+  text-decoration-color: var(--main-color);
+}
+
+.noul-link{
+  text-decoration:none;
+}
+
+#main-header{
+  background: var(--secondary-color);
+  padding: 4rem 0;
+}
+
+.project-card{
+  height: 100% !important;
+}
+
+.subtitleDiv *{
+  margin-right: 5px;
+}
+/*-----------------------------------------------------------------------------------*/
+
+#timeline{
+  background-color: var(--main-bg);
+}
+
+#timeline ul{
+  background: var(--main-bg);
+  margin-bottom: 50px;
+}
+
+/* Create line */
+#timeline ul li{
+  list-style: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff; 
+}
+
+/* ?Boxes */
+#timeline ul li div{
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  opacity: 0;
+  padding: 1rem;
+  background: var(--main-color);
+  color: var(--main-bg);
+  border-radius: 10px;
+}
+
+/* ?right side */
+#timeline ul li:nth-child(odd) div{
+  left: 40px;
+  transform: translate(200px,0);
+}
+
+/* left side*/
+#timeline ul li:nth-child(even) div {
+  left: -434px;
+  transform: translate(-200px,0);
+}
+
+/* Dots */
+#timeline ul li:after{
+  content:'';
+  position: absolute;
+  left: 50%;
+  bottom: 3px;
+  width: 20px;
+  height: 20px;
+  background: inherit;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+/* Arrows base */
+/* creates just a white square inside the div */
+#timeline div:before{
+  content:'';
+  position: absolute;
+  bottom: 5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+/* right-side arrows */
+#timeline ul li:nth-child(odd) div::before{
+  left: -12px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent var(--main-color) transparent transparent;
+}
+/* left-side arrows */
+#timeline ul li:nth-child(even) div::before {
+  right: -12px;
+  border-width: 8px 0px 8px 16px;
+  border-color:  transparent transparent transparent var(--main-color);
+}
+
+/* Show Boxes */
+#timeline ul li.show div{
+  transform:none;
+  visibility: visible;
+  opacity: 1;
+}
+#timeline ul li.show:after{
+  background: var(--main-color);
+}
+
+@media(max-width: 900px){
+  #timeline ul li div{
+      width: 250px;
+  }
+
+  #timeline ul li:nth-child(even) div{
+      left:-284px;
+  }
+}
+
+@media(max-width: 600px){
+  #timeline ul li{
+      margin-left: 20px;
+  }
+  #timeline ul li div{
+      width: calc(100vw - 130px);
+  }
+  #timeline ul li:nth-child(even) div{
+      /* making it come from right side */
+      left: 40px;
+      transform: translate(200px, 0);
+  }
+  #timeline ul li:nth-child(even) div::before {
+      left: -15px;
+      border-width: 8px 16px 8px 0;
+      border-color: transparent var(--main-color) transparent transparent;
+  }
+  #timeline ul li.show:nth-child(even) div{
+       /* making it come from right side */
+      transform: none;
+  }
+}
+
+/*----------------------------------------------------------------------------*/

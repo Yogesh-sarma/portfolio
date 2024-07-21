@@ -7,24 +7,22 @@ import { Link } from "react-router-dom";
 
 class Header extends Component {
     state = {  } 
-    
-    componentDidMount(){
-        console.log("header mounted");
-    }
 
     render() { 
+        const homepage = process.env.PUBLIC_URL;
+        console.log(homepage);
 
         return (
             <Navbar fixed="top" expand="lg" className="bg-body-tertiary">
                 <Container>
-                    <Link to="/" className="logo py-1 px-2 me-3">YS</Link>
+                    <Link to={homepage} className="logo py-1 px-2 me-3">YS</Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className="justify-content-between">
                     <Nav>
-                        <Nav.Link href="/#home">Home</Nav.Link>
-                        <Nav.Link href="/#skills">Skills</Nav.Link>
-                        <Nav.Link href="/#timeline">Work & Education</Nav.Link>
-                        <Nav.Link href="/#projects">Projects</Nav.Link>
+                        <Nav.Link href={homepage+"/#home"}>Home</Nav.Link>
+                        <Nav.Link href={homepage+"/#skills"}>Skills</Nav.Link>
+                        <Nav.Link href={homepage+"/#timeline"}>Work & Education</Nav.Link>
+                        <Nav.Link href={homepage+"/#projects"}>Projects</Nav.Link>
                     </Nav>
                     <Nav>
                         <Button className="headerButtons normal-main-button hide-button me-2 mb-2" href="mailTo:addankiyogesh@gmail.com">Contact Me</Button>

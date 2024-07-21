@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "https://yogesh-sarma.github.io/portfolio/static/css/main.514d5baf.css",
-    "main.js": "https://yogesh-sarma.github.io/portfolio/static/js/main.e1276d33.js",
+    "main.js": "https://yogesh-sarma.github.io/portfolio/static/js/main.fd35d0ca.js",
     "static/js/787.1ed0c42c.chunk.js": "https://yogesh-sarma.github.io/portfolio/static/js/787.1ed0c42c.chunk.js",
     "index.html": "https://yogesh-sarma.github.io/portfolio/index.html",
     "main.514d5baf.css.map": "https://yogesh-sarma.github.io/portfolio/static/css/main.514d5baf.css.map",
-    "main.e1276d33.js.map": "https://yogesh-sarma.github.io/portfolio/static/js/main.e1276d33.js.map",
+    "main.fd35d0ca.js.map": "https://yogesh-sarma.github.io/portfolio/static/js/main.fd35d0ca.js.map",
     "787.1ed0c42c.chunk.js.map": "https://yogesh-sarma.github.io/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.514d5baf.css",
-    "static/js/main.e1276d33.js"
+    "static/js/main.fd35d0ca.js"
   ]
 }

@@ -8,15 +8,16 @@ import { Container } from 'react-bootstrap';
 import Unknown from './components/unknown';
 
 function App() {
-  const homepage = process.env.PUBLIC_URL;
-  
+  const baseName = process.env.PUBLIC_URL;
+  console.log("BASE NAME:", baseName);
+
   return (
     <Container fluid className="App d-flex flex-column">
       <Router>
         <Header/>
         <Routes> 
-          <Route path={homepage} element={<Landing/>}/>
-          <Route path="*" element={<Unknown/>}/>
+          <Route path="/" element={<Landing/>}/>
+          {/* <Route path="*" element={<Unknown/>}/> */}
         </Routes>
         <Footer/>
       </Router>

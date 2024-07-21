@@ -1,8 +1,8 @@
-import { ApachesparkOriginal, D3jsOriginal, GithubOriginal, HadoopOriginal, Html5Original, JavaOriginal, JavascriptOriginal, KerasOriginal, MatplotlibOriginal, MatplotlibOriginalWordmark, MysqlOriginal, NumpyOriginal, OpencvOriginalWordmark, PythonOriginal, ReactbootstrapOriginal, ReactOriginal, SpringOriginal, TensorflowOriginal, YarnOriginal } from "devicons-react";
+import { ApachesparkOriginal, D3jsOriginal, GithubOriginal, HadoopOriginal, Html5Original, JavaOriginal, JavascriptOriginal, KerasOriginal, MatplotlibOriginal, MysqlOriginal, NumpyOriginal, OpencvOriginalWordmark, PythonOriginal, ReactbootstrapOriginal, ReactOriginal, SpringOriginal, TensorflowOriginal } from "devicons-react";
 import { Component } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { IoOpenOutline } from "react-icons/io5";
-import { SiApachehive, SiHive } from "react-icons/si";
+import { SiApachehive } from "react-icons/si";
 
 class Projects extends Component{
     render() {

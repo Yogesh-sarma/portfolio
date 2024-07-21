@@ -63,11 +63,11 @@ class Landing extends Component{
                         <h1 className="mb-5"><span className="main-text">AI/ML</span> Engineer</h1>
                         <h4>I'm <span className="main-text">Yogesh Sarma</span>. Software Engineer and Full Stack Developer with 3 Years of Experience, AI/ML aficianado advancing my skills with a Master's Degree in the US.</h4>
                         <Col className="my-3">
-                            <a className="footer-logo ms-2" href="https://github.com/Yogesh-sarma" target="_blank"><GithubOriginal size={'2rem'}/></a>
-                            <a className="footer-logo ms-2" href="https://www.linkedin.com/in/yogesh-sarma845/" target="_blank"><LinkedinOriginal size={'2rem'}/></a>
-                            <a className="footer-logo ms-2" href="https://www.instagram.com/yogesh_sarma_/" target="_blank"><FaInstagram size={'2rem'} color={'#405DE6'}/></a>
-                            <a className="footer-logo ms-2" href="https://www.facebook.com/yogesh.sarma.5/" target="_blank"><FacebookOriginal size={'2rem'}/></a>
-                            <a className="footer-logo ms-2" href="https://x.com/yogeshsarma" target="_blank"><TwitterOriginal size={'1.5rem'}/></a>
+                            <a className="footer-logo ms-2" href="https://github.com/Yogesh-sarma" target="_blank"  rel="noreferrer"><GithubOriginal size={'2rem'}/></a>
+                            <a className="footer-logo ms-2" href="https://www.linkedin.com/in/yogesh-sarma845/" target="_blank"  rel="noreferrer"><LinkedinOriginal size={'2rem'}/></a>
+                            <a className="footer-logo ms-2" href="https://www.instagram.com/yogesh_sarma_/" target="_blank"  rel="noreferrer"><FaInstagram size={'2rem'} color={'#405DE6'}/></a>
+                            <a className="footer-logo ms-2" href="https://www.facebook.com/yogesh.sarma.5/" target="_blank"  rel="noreferrer"><FacebookOriginal size={'2rem'}/></a>
+                            <a className="footer-logo ms-2" href="https://x.com/yogeshsarma" target="_blank"  rel="noreferrer"><TwitterOriginal size={'1.5rem'}/></a>
                         </Col>
                         <Col>
                             <a className="primary-text noul-link ms-2" style={{ margin:'5px'}} href="mailTo:yogeshsarmaw@gmail.com"><FaEnvelope size={'2rem'} color="#034fa0"/> : yogeshsarmaw@gmail.com</a>

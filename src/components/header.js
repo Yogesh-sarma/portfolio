@@ -9,8 +9,7 @@ class Header extends Component {
     state = {  } 
 
     render() { 
-        const homepage = process.env.PUBLIC_URL;
-        console.log(homepage);
+        const homepage = "/";
 
         return (
             <Navbar fixed="top" expand="lg" className="bg-body-tertiary">
@@ -19,10 +18,10 @@ class Header extends Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className="justify-content-between">
                     <Nav>
-                        <Nav.Link href={homepage+"/#home"}>Home</Nav.Link>
-                        <Nav.Link href={homepage+"/#skills"}>Skills</Nav.Link>
-                        <Nav.Link href={homepage+"/#timeline"}>Work & Education</Nav.Link>
-                        <Nav.Link href={homepage+"/#projects"}>Projects</Nav.Link>
+                        <Nav.Link href={homepage+"#home"}>Home</Nav.Link>
+                        <Nav.Link href={homepage+"#skills"}>Skills</Nav.Link>
+                        <Nav.Link href={homepage+"#timeline"}>Work & Education</Nav.Link>
+                        <Nav.Link href={homepage+"#projects"}>Projects</Nav.Link>
                     </Nav>
                     <Nav>
                         <Button className="headerButtons normal-main-button hide-button me-2 mb-2" href="mailTo:addankiyogesh@gmail.com">Contact Me</Button>

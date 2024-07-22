@@ -17,7 +17,7 @@ function App() {
         <Header/>
         <Routes> 
           <Route path="/" element={<Landing/>}/>
-          {/* <Route path="*" element={<Unknown/>}/> */}
+          <Route path="*" element={<Unknown/>}/>
         </Routes>
         <Footer/>
       </Router>

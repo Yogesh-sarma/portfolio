@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { FacebookOriginal, GithubOriginal, LinkedinOriginal, TwitterOriginal } from "devicons-react";
 import { FaEnvelope, FaInstagram } from "react-icons/fa6";
 import WorkExp from "./workExp";
@@ -57,7 +57,7 @@ class Landing extends Component{
         return (
             <Container fluid className="flex-column scroll-offset">
                 <Row id="home" className="landing-row primary-text">
-                    <Col xs="11" sm="10" md="11" lg="8" xl="9" className=" highlight-bg p-3 m-2 m-sm-5">
+                    <Col xs="11" sm="10" md="11" lg="8" xl="9" className="rounded-4 highlight-bg p-3 m-2 m-sm-5">
                         <h1 className="mb-0"><span className="main-text">Software</span> Engineer,</h1>
                         <h1 className="mb-0"><span className="main-text">Full Stack</span> Developer,</h1>
                         <h1 className="mb-5"><span className="main-text">AI/ML</span> Engineer</h1>
@@ -74,15 +74,15 @@ class Landing extends Component{
                         </Col>
                     </Col>
                     <Col className="d-flex flex-column p-3 m-2 m-sm-5 mx-lg-2 justify-content-center align-items-center">
-                        <Button className="button m-2">Contact Me</Button>
-                        <Button id="dwndResumeButton" className="button m-2">Download Resume</Button>
+                        <a className="btn btn-primary button m-2 noul-link" href="mailTo:yogeshsarmaw@gmail.com">Contact Me</a>
+                        <a id="dwndResumeButton" className="btn btn-primary button m-2" href="/src/download/Yogesh-Resume.pdf" download>Download Resume</a>
                     </Col>
                 </Row>
 
-                <Row id="skills" className='my-3 scroll-offset'>
+                <Row id="skills" className='mt-3 scroll-offset'>
                     <Skills/>
                     <WorkExp/>
-                    <Projects/>
+                    <Projects/> 
                 </Row>
             </Container>
         )

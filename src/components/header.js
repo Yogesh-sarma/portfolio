@@ -24,8 +24,8 @@ class Header extends Component {
                         <Nav.Link href={homepage+"#projects"}>Projects</Nav.Link>
                     </Nav>
                     <Nav>
-                        <Button className="headerButtons normal-main-button hide-button me-2 mb-2" href="mailTo:addankiyogesh@gmail.com">Contact Me</Button>
-                        <Button className="headerButtons normal-main-button hide-button mb-2">Download Resume</Button>
+                        <Button className="headerButtons normal-main-button hide-button me-2 mb-2" href="mailTo:yogeshsarmaw@gmail.com">Contact Me</Button>
+                        <Button className="headerButtons normal-main-button hide-button mb-2" href="/src/download/Yogesh-Resume.pdf" download>Download Resume</Button>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>

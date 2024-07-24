@@ -3,7 +3,7 @@ import { Component } from "react";
 class WorkExp extends Component{
     render(){
         return(
-            <section id="timeline" className='py-3 scroll-offset'>
+            <section id="timeline" className='py-3 scroll-offset off-bg'>
                 <h2 className='text-center pt-2 mb-4 main-text'>Work & Education</h2>
                 <ul>
                     <li className="show">

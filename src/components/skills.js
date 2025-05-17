@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { ApachesparkOriginal, BashOriginal, BootstrapOriginal, CplusplusOriginal, D3jsOriginal, GitOriginal, HadoopOriginal, IntellijOriginal, JavaOriginal, JavascriptOriginal, KerasOriginal, MysqlOriginal, NumpyOriginal, OpencvOriginal, PostmanOriginal, PythonOriginal, ReactbootstrapOriginal, ReactOriginal, ScikitlearnOriginal, SpringOriginal, TensorflowOriginal, VscodeOriginal } from 'devicons-react';
+import { ApachesparkOriginal, BashOriginal, BootstrapOriginal, CplusplusOriginal, D3jsOriginal, ExpressOriginal, GitOriginal, HadoopOriginal, IntellijOriginal, JavaOriginal, JavascriptOriginal, KerasOriginal, MongodbOriginal, MysqlOriginal, NodejsOriginal, NumpyOriginal, OpencvOriginal, PostmanOriginal, PythonOriginal, ReactbootstrapOriginal, ReactOriginal, ScikitlearnOriginal, SpringOriginal, TensorflowOriginal, VscodeOriginal } from 'devicons-react';
 
 
 class Skills extends Component{
@@ -34,8 +34,20 @@ class Skills extends Component{
                 icon: <SpringOriginal size={iconSize}/>
             },
             {
+                name: 'Node.js',
+                icon: <NodejsOriginal size={iconSize}/>
+            },
+            {
+                name: 'Express.js',
+                icon: <ExpressOriginal size={{iconSize}}/>
+            },
+            {
                 name: 'MySQL',
                 icon: <MysqlOriginal size={iconSize}/>
+            },
+            {
+                name: 'MongoDB',
+                icon: <MongodbOriginal size={iconSize}/>
             },
             {
                 name: 'Bootstrap',
